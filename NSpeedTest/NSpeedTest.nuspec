@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>1.0</version>
+    <title>$title$</title>
+    <authors>Uladzimir Kazakevich</authors>
+    <owners>Uladzimir Kazakevich</owners>
+    <licenseUrl>https://raw.githubusercontent.com/Kwull/NSpeedTest/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kwull/nspeedtest</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NSpeedTest client library to test internet bandwidth using speedtest.net</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>SpeedTest speedtest.net</tags>
+  </metadata>
+</package>
