@@ -36,10 +36,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Device.Portable, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3f6d3f5f65b761a0, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Device.Location.Portable.1.0.0\lib\System.Device.Portable.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,6 +47,7 @@
     <Compile Include="ISpeedTestClient.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Download.cs" />
+    <Compile Include="Models\Coordinate.cs" />
     <Compile Include="Models\ServerConfig.cs" />
     <Compile Include="SpeedTestClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="NSpeedTest.nuspec" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

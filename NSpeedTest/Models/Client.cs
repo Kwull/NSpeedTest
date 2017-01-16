@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Device.Location;
 using System.Xml.Serialization;
 
 namespace NSpeedTest.Models
@@ -31,9 +30,9 @@ namespace NSpeedTest.Models
         [XmlAttribute("ispulavg")]
         public int IspAvarageUploadSpeed { get; set; }
 
-        private Lazy<GeoCoordinate> geoCoordinate;
+        private readonly Lazy<Coordinate> geoCoordinate;
 
-        public GeoCoordinate GeoCoordinate
+        public Coordinate GeoCoordinate
         {
             get { return geoCoordinate.Value; }
         }
@@ -41,7 +40,7 @@ namespace NSpeedTest.Models
         public Client()
         {
             // note: geo coordinate will not be recalculated on Latitude or Longitude change
-            geoCoordinate = new Lazy<GeoCoordinate>(() => new GeoCoordinate(Latitude, Longitude));
+            geoCoordinate = new Lazy<Coordinate>(() => new Coordinate(Latitude, Longitude));
         }
     }
 }

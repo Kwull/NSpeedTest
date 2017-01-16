@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Device.Location;
 using System.Xml.Serialization;
 
 namespace NSpeedTest.Models
@@ -16,7 +15,7 @@ namespace NSpeedTest.Models
             Servers = new List<Server>();
         }
 
-        public void CalculateDistances(GeoCoordinate clientCoordinate)
+        public void CalculateDistances(Coordinate clientCoordinate)
         {
             foreach (var server in Servers)
             {

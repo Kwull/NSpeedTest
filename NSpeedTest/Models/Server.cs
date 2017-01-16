@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Device.Location;
 using System.Xml.Serialization;
 
 namespace NSpeedTest.Models
@@ -35,8 +34,8 @@ namespace NSpeedTest.Models
 
         public int Latency { get; set; }
 
-        private Lazy<GeoCoordinate> geoCoordinate;
-        public GeoCoordinate GeoCoordinate
+        private Lazy<Coordinate> geoCoordinate;
+        public Coordinate GeoCoordinate
         {
             get { return geoCoordinate.Value; }
         }
@@ -44,7 +43,7 @@ namespace NSpeedTest.Models
         public Server()
         {
             // note: geo coordinate will not be recalculated on Latitude or Longitude change
-            geoCoordinate = new Lazy<GeoCoordinate>(() => new GeoCoordinate(Latitude, Longitude));
+            geoCoordinate = new Lazy<Coordinate>(() => new Coordinate(Latitude, Longitude));
         }
     }
 }
