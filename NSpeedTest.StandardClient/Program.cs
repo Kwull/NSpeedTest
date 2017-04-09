@@ -14,10 +14,11 @@ namespace NSpeedTest.Client
 
         static void Main()
         {
-            Setup();
+            MainAsync().GetAwaiter().GetResult();
+            Console.ReadKey();
         }
 
-        private static async void Setup()
+        private static async Task MainAsync()
         {
             Console.WriteLine("Getting speedtest.net settings and server list...");
             client = new SpeedTestClient();
