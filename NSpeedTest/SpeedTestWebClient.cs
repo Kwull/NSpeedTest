@@ -31,7 +31,7 @@ namespace NSpeedTest
         {
             var request = base.GetWebRequest(AddTimeStamp(address)) as HttpWebRequest;
             
-            request.UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko";
+            request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36";
             request.Accept = "text/html, application/xhtml+xml, */*";
             request.CachePolicy = new RequestCachePolicy(RequestCacheLevel.BypassCache);
             request.ServicePoint.ConnectionLimit = ConnectionLimit;
